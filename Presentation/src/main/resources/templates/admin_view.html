@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head> 
 <body>
+<form role="form" th:action="@{/admin}" method="get">
 
 <div class="container" >
 	<h1> </h1>
@@ -28,8 +29,8 @@
 		    <div class="input-group-text">
 				<input type="text"  name="searchKeyword" id="searchKeyword" 
 				th:value="${searchKeyword}" 
-				th:action="@{/admin}"  class="form-control">
-		    	<button class="btn btn-dark" type="button" >검색</button>
+				class="form-control">
+		    	<button class="btn btn-dark" type="submit" >검색</button>
 	    	</td>
 	    	</tr>
  </div>
@@ -139,7 +140,7 @@
 	      
 	      <tr>
 	      <th>취미</td>
-	      <td>
+	      <td> 
 	      		<div th:each="hobby : ${list_h}" class="form-check">
 	      			<input type="checkbox" name="hobby_cd"  th:value="${hobby.hobby_cd}" class="form-check-input" 
 	      					th:checked="${#strings.contains(emp_hobby_list, hobby.hobby_cd)}">
@@ -147,7 +148,7 @@
 	  			</div>
 	      </td>
 	     </tr>
-		 
+		  
 	      <tr>
 	      <th></td>
 	      <td>
