@@ -153,6 +153,8 @@
 	      <th></td>
 	      <td>
 				<div class="container" style="text-align:right">
+					<button type="button" class="btn btn-dark" 
+						th:onclick="|location.href='@{/admin}'|">목록</button>
 					<button type="submit" class="btn btn-dark" >저장</button>
 					<button type="button" class="btn btn-dark" 
 					th:onclick="|location.href='@{/admin/delete/{emp_id}(emp_id=${dto.emp_id})}'|">삭제</button>

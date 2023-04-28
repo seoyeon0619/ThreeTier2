@@ -34,7 +34,7 @@ public class PresentationService {
 	               .build()
 	               .toUri();
 	               
-		EmpDto view = restTemplate.getForObject(uri+searchKeyword, EmpDto.class);
+		EmpDto view = restTemplate.getForObject(uri, EmpDto.class);
 		return view;
 	}
 	
