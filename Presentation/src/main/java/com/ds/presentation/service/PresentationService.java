@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.ds.business.dto.DeptDto;
-import com.ds.business.dto.EmpDto;
-import com.ds.business.dto.EmpHobbyDto;
-import com.ds.business.dto.HobbyDto;
+import com.ds.presentation.dto.DeptDto;
+import com.ds.presentation.dto.EmpDto;
+import com.ds.presentation.dto.EmpHobbyDto;
+import com.ds.presentation.dto.HobbyDto;
+
 
 @Service
 public class PresentationService {
